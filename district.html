@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>জেলা ভ্রমণ গাইড | বাংলাদেশ ভ্রমণ</title>
+
+  <meta
+    name="description"
+    content="বাংলাদেশের জেলার দর্শনীয় স্থান, লোকেশন, যাতায়াত ও ভ্রমণ তথ্য।"
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      background: #f6faf7;
+    }
+
+    .district-page-header {
+      min-height: 330px;
+      padding: 80px 20px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      text-align: center;
+      color: white;
+
+      background:
+        linear-gradient(
+          rgba(2, 55, 38, .82),
+          rgba(2, 55, 38, .90)
+        ),
+        url("https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1800&q=80")
+        center / cover;
+    }
+
+    .district-page-header h1 {
+      margin: 8px 0;
+      font-size: clamp(35px, 6vw, 60px);
+    }
+
+    .district-page-header p {
+      color: #dcebe4;
+    }
+
+    .back-home {
+      display: inline-block;
+      margin-bottom: 12px;
+
+      color: #9de0ba;
+      text-decoration: none;
+    }
+
+    .spot-section {
+      max-width: 1200px;
+      min-height: 450px;
+
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    .spot-section-title {
+      margin-bottom: 25px;
+    }
+
+    .spot-section-title h2 {
+      color: #043e2b;
+      font-size: 30px;
+    }
+
+    .spot-section-title p {
+      margin-top: 5px;
+      color: #69766f;
+    }
+
+    .spot-grid {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px;
+    }
+
+    .tourist-card {
+      overflow: hidden;
+
+      background: white;
+      border: 1px solid #e1ebe5;
+      border-radius: 18px;
+
+      box-shadow:
+        0 8px 25px rgba(4, 62, 43, .08);
+    }
+
+    .tourist-card img {
+      display: block;
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .tourist-info {
+      padding: 20px;
+    }
+
+    .tourist-info h3 {
+      color: #064d36;
+      font-size: 22px;
+    }
+
+    .spot-location {
+      margin: 7px 0 15px;
+      color: #e52d43;
+      font-size: 14px;
+    }
+
+    .description {
+      min-height: 48px;
+      color: #66756d;
+      line-height: 1.7;
+      font-size: 14px;
+    }
+
+    .travel-details {
+      margin: 18px 0;
+      padding: 14px;
+
+      background: #f2f8f4;
+      border-radius: 12px;
+    }
+
+    .travel-details p {
+      margin: 8px 0;
+      line-height: 1.6;
+      font-size: 13px;
+    }
+
+    .spot-actions {
+      display: flex;
+      gap: 10px;
+    }
+
+    .map-button,
+    .heart-button {
+      border: 0;
+      border-radius: 9px;
+
+      padding: 10px 14px;
+
+      font: inherit;
+      font-size: 13px;
+      font-weight: 700;
+
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .map-button {
+      flex: 1;
+      text-align: center;
+
+      color: white;
+      background: #076544;
+    }
+
+    .heart-button {
+      color: #d9273d;
+      background: #fff0f2;
+    }
+
+    .coming-soon {
+      padding: 50px 20px;
+
+      text-align: center;
+
+      background: white;
+      border-radius: 18px;
+    }
+
+    .coming-soon div {
+      font-size: 45px;
+    }
+
+    .coming-soon h2 {
+      margin: 10px 0;
+      color: #064d36;
+    }
+
+    .coming-soon p {
+      color: #69766f;
+    }
+
+    @media (max-width: 600px) {
+      .district-page-header {
+        min-height: 280px;
+      }
+
+      .spot-section {
+        padding: 40px 14px;
+      }
+
+      .tourist-card img {
+        height: 190px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="navbar">
+
+  <a class="logo" href="index.html">
+    <span class="flag">🇧🇩</span>
+    <span>বাংলাদেশ ভ্রমণ</span>
+  </a>
+
+  <nav class="nav-links">
+    <a href="index.html">হোম</a>
+    <a href="index.html#districts">৬৪ জেলা</a>
+  </nav>
+
+  <div class="nav-actions">
+    <button class="favourite-button">
+      ♡ <span>Favourite</span>
+    </button>
+
+    <button class="login-button">
+      Google Sign-In
+    </button>
+  </div>
+
+</header>
+
+
+<section class="district-page-header">
+
+  <div>
+
+    <a class="back-home" href="index.html">
+      ← সকল জেলায় ফিরে যান
+    </a>
+
+    <p id="divisionName">বাংলাদেশ</p>
+
+    <h1 id="districtName">জেলা</h1>
+
+    <p>
+      দর্শনীয় স্থান • লোকেশন • যাতায়াত • খরচ • ভ্রমণের সময়
+    </p>
+
+  </div>
+
+</section>
+
+
+<main class="spot-section">
+
+  <div class="spot-section-title">
+    <h2>🏞️ দর্শনীয় স্থান</h2>
+    <p id="spotCount"></p>
+  </div>
+
+  <div class="spot-grid" id="spotGrid"></div>
+
+</main>
+
+
+<footer>
+
+  <div>
+    <strong>🇧🇩 বাংলাদেশ ভ্রমণ</strong>
+    <p>বাংলাদেশের ৬৪ জেলার Travel Guide</p>
+  </div>
+
+  <p>
+    © <span id="year"></span> বাংলাদেশ ভ্রমণ
+  </p>
+
+</footer>
+
+<script src="data/spots.js"></script>
+<script src="district.js"></script>
+
+</body>
+</html>

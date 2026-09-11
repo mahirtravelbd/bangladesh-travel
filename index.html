@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>বাংলাদেশ ভ্রমণ | ৬৪ জেলার Travel Guide</title>
+  <meta name="description"
+        content="বাংলাদেশের ৮ বিভাগ ও ৬৪ জেলার দর্শনীয় স্থান, লোকেশন, যাতায়াত, আনুমানিক খরচ ও ভ্রমণ তথ্য।">
+
+  <meta name="theme-color" content="#075c3c">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <a class="logo" href="#">
+    <span class="flag">🇧🇩</span>
+    <span>বাংলাদেশ ভ্রমণ</span>
+  </a>
+
+  <nav class="nav-links">
+    <a href="#home">হোম</a>
+    <a href="#districts">৬৪ জেলা</a>
+    <a href="#popular">জনপ্রিয় স্থান</a>
+  </nav>
+
+  <div class="nav-actions">
+    <button class="favourite-button" type="button">
+      ♡ <span>Favourite</span>
+    </button>
+
+    <button class="login-button" type="button" id="loginButton">
+      Google Sign-In
+    </button>
+  </div>
+</header>
+
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+      <span class="hero-badge">
+        🇧🇩 ৮ বিভাগ • ৬৪ জেলা
+      </span>
+
+      <h1>
+        বাংলাদেশের সৌন্দর্য
+        <span>আবিষ্কার করুন</span>
+      </h1>
+
+      <p>
+        পাহাড়, সমুদ্র, নদী, বন ও ঐতিহাসিক স্থান—
+        বাংলাদেশের প্রতিটি জেলার ভ্রমণ তথ্য খুঁজে নিন।
+      </p>
+
+      <div class="search-container">
+
+        <span class="search-icon">⌕</span>
+
+        <input
+          id="searchInput"
+          type="search"
+          placeholder="জেলা বা ভ্রমণ স্থান খুঁজুন..."
+          autocomplete="off"
+          aria-label="জেলা খুঁজুন"
+        >
+
+        <button id="searchButton" type="button">
+          খুঁজুন
+        </button>
+
+      </div>
+
+      <div class="hero-stats">
+
+        <div>
+          <strong>৮</strong>
+          <span>বিভাগ</span>
+        </div>
+
+        <div>
+          <strong>৬৪</strong>
+          <span>জেলা</span>
+        </div>
+
+        <div>
+          <strong>১০০+</strong>
+          <span>ভ্রমণ স্থান</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- DISTRICTS -->
+  <section class="district-section" id="districts">
+
+    <div class="section-heading">
+
+      <span>ঘুরে দেখুন বাংলাদেশ</span>
+
+      <h2>৮ বিভাগ • ৬৪ জেলা</h2>
+
+      <p>
+        বিভাগ নির্বাচন করুন অথবা Search করে আপনার পছন্দের জেলা খুঁজে নিন।
+      </p>
+
+    </div>
+
+
+    <div
+      class="division-buttons"
+      id="divisionButtons">
+    </div>
+
+
+    <div class="results-info">
+      <h3 id="resultTitle">বাংলাদেশের সকল জেলা</h3>
+      <span id="districtCount">৬৪টি জেলা</span>
+    </div>
+
+
+    <div
+      class="district-grid"
+      id="districtGrid">
+    </div>
+
+
+    <div
+      class="no-result"
+      id="noResult"
+      hidden>
+
+      <div>🔎</div>
+
+      <h3>কোনো জেলা পাওয়া যায়নি</h3>
+
+      <p>অন্য নামে আবার Search করুন।</p>
+
+    </div>
+
+  </section>
+
+
+  <!-- POPULAR PLACES -->
+  <section class="popular-section" id="popular">
+
+    <div class="section-heading light">
+
+      <span>প্রকৃতির বাংলাদেশ</span>
+
+      <h2>জনপ্রিয় ভ্রমণ স্থান</h2>
+
+      <p>
+        পরবর্তী ধাপে প্রতিটি স্থানের বিস্তারিত Travel Guide যোগ করা হবে।
+      </p>
+
+    </div>
+
+
+    <div class="popular-grid">
+
+      <article class="place-card">
+
+        <div class="place-image cox">
+          <span>কক্সবাজার</span>
+        </div>
+
+        <div class="place-info">
+
+          <div>
+            <small>📍 কক্সবাজার</small>
+            <h3>কক্সবাজার সমুদ্র সৈকত</h3>
+          </div>
+
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Cox's+Bazar+Sea+Beach"
+            target="_blank"
+            rel="noopener noreferrer">
+            Google Maps ↗
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <article class="place-card">
+
+        <div class="place-image sundarban">
+          <span>সুন্দরবন</span>
+        </div>
+
+        <div class="place-info">
+
+          <div>
+            <small>📍 খুলনা অঞ্চল</small>
+            <h3>সুন্দরবন</h3>
+          </div>
+
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Sundarbans+Bangladesh"
+            target="_blank"
+            rel="noopener noreferrer">
+            Google Maps ↗
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <article class="place-card">
+
+        <div class="place-image sajek">
+          <span>সাজেক</span>
+        </div>
+
+        <div class="place-info">
+
+          <div>
+            <small>📍 রাঙামাটি</small>
+            <h3>সাজেক ভ্যালি</h3>
+          </div>
+
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Sajek+Valley+Bangladesh"
+            target="_blank"
+            rel="noopener noreferrer">
+            Google Maps ↗
+          </a>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+<!-- আমার পরিচয় শুরু -->
+
+<section class="about" id="about">
+
+  <div class="about-card">
+
+    <img
+      src="images/my-photo.jpg"
+      alt="Website creator"
+      class="about-photo"
+    >
+
+    <div class="about-info">
+
+      <span>👋 আমার পরিচয়</span>
+
+      <h2>MAHIR AHMED NIROB</h2>
+
+      <p>
+        আমি বাংলাদেশকে ভালোবাসি। বাংলাদেশের ৬৪ জেলার
+        সুন্দর দর্শনীয় স্থানগুলো সবার কাছে সহজভাবে তুলে ধরার
+        জন্য এই ওয়েবসাইটটি তৈরি করছি।
+      </p>
+
+      <p>
+        🇧🇩 আমার লক্ষ্য — বাংলাদেশের সৌন্দর্যকে আরও মানুষের
+        কাছে পৌঁছে দেওয়া।
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- আমার পরিচয় শেষ -->
+
+</main>
+
+
+<footer>
+
+  <div>
+    <strong>🇧🇩 বাংলাদেশ ভ্রমণ</strong>
+    <p>বাংলাদেশের ৬৪ জেলার Travel Guide</p>
+  </div>
+
+  <p>
+    © <span id="year"></span> বাংলাদেশ ভ্রমণ
+  </p>
+
+</footer>
+
+
+<script src="data/spots.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
