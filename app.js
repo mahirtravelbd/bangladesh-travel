@@ -453,22 +453,6 @@ searchInput.addEventListener(
   }
 );
 
-
-// -------------------------
-// Google Login Placeholder
-// -------------------------
-
-document
-  .getElementById("loginButton")
-  .addEventListener("click", () => {
-
-    alert(
-      "পরবর্তী ধাপে Firebase দিয়ে আসল Google Sign-In যোগ করব।"
-    );
-
-  });
-
-
 // -------------------------
 // Automatic Year
 // -------------------------
